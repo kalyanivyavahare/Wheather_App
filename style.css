@@ -24,7 +24,7 @@
 	border-radius: 30px;
 	padding: 20px;
 	background: transparent;
-	backdrop-filter: blur(20px);
+	backdrop-filter: blur(2px);
 }.heading{
 	color: royalblue;
 	font-family: Arial Black;
