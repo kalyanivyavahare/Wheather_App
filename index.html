@@ -6,16 +6,47 @@
 	<title>Weather App</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<script type="text/javascript" src="script.js"></script>
+	
 </head>
 <body>
-<div class="mdiv">
+<div class="mdiv ">
 	<div class="container">
+		<h3 class="heading tracking-in-expand">WEATHER FORECAST</h3>
 	<from>
-		<h3>Weather App</h3>
-		<input type="text" name="city" id="city_name" placeholder="Enter a city">
-		<button type="button" onclick="fetchCity()">
-			<img src="https://www.freeiconspng.com/thumbs/search-icon-png/search-icon-png-8.png" alt="search icon" height="20px">
+		<div class="component">
+			
+		<div>
+			<input type="text" name="city" id="city_name" placeholder="Enter a city" autofocus>
+		</div>
+		<div class="btn heartbeat ">
+			<button type="button" class="srch_btn" onclick="fetchCity()" >
+			<img src="https://www.freeiconspng.com/thumbs/search-icon-png/search-icon-png-8.png" alt="search icon" height="50px">
 		</button>
+	   </div>
+		</div>
+		<br>
+		<div align="center" style="margin-top: 0px;" >
+			<img src="https://cdn.jim-nielsen.com/ios/1024/weather-2019-02-07.png" alt="weathericon" height="200px" class="img bounce-top ">
+		</div>
+		<div align="center" style="margin-top:0px" class="text-focus-in">
+			<span id="city" >CITY NAME</span>
+			<br>
+			<span class="measurement" id="temp">0°C</span>
+		</div>
+		<div align="center" style="margin-top:20px">
+			<table width="100%" cellpadding="10px">
+				<tr align="center">
+					<td>
+						<h5 class="headings ">WIND SPEED</h5>
+						<span class="measurement" id="wind_speed">0 km/hr</span>
+					</td>
+					<td>
+						<h4 class="headings">HUMIDITY</h4>
+						<span class="measurement" id="humidity">0 g/kg</span>
+					</td>
+				</tr>
+			</table>
+		</div>
 	</from>	
 	</div>
 </div>
